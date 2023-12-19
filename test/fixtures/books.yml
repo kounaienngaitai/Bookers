@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  本のタイトル: MyString
+  string: MyString
+  感想: MyString
+  string: MyString
+
+two:
+  本のタイトル: MyString
+  string: MyString
+  感想: MyString
+  string: MyString
