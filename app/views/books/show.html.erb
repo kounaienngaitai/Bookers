@@ -1,4 +1,15 @@
+
+
 <h2>詳細画面</h2>
+
+<% if @book.errors.any? %>
+  <%= @book.errors.count %>件のエラーが発生しました
+  <ul>
+    <% @book.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+  </ul>
+<% end %>
 
 <strong>本のタイトル:</strong><%= @book.title %>
 <br>
