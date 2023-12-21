@@ -1,7 +1,3 @@
-
-
-<h2>詳細画面</h2>
-
 <% if @book.errors.any? %>
   <%= @book.errors.count %>件のエラーが発生しました
   <ul>
@@ -11,9 +7,9 @@
   </ul>
 <% end %>
 
-<strong>本のタイトル:</strong><%= @book.title %>
+<strong>Title:</strong><%= @book.title %>
 <br>
-  <strong>感想:</strong><%= @book.body %>
+  <strong>Body:</strong><%= @book.body %>
 </br>
 
-<%= link_to "編集", edit_book_path(@book.id) %> | <%= link_to "戻る", books_new_path %>
+<%= link_to "Edit", edit_book_path(@book.id) %> | <%= link_to "Back", books_path %>
